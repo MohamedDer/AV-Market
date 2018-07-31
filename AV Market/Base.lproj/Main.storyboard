@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AV Market-->
         <scene sceneID="s7w-gf-hjZ">
             <objects>
                 <tableViewController id="2He-Xf-xn9" customClass="ViewController" customModule="AV_Market" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,19 +36,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-CV-xDu">
-                                                    <rect key="frame" x="90" y="2.5" width="275" height="54.5"/>
+                                                    <rect key="frame" x="90" y="5.5" width="275" height="48.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC7-6f-yf6">
-                                                            <rect key="frame" x="0.0" y="0.0" width="275" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="275" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBW-M2-h4e">
-                                                            <rect key="frame" x="0.0" y="34" width="275" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
+                                                            <rect key="frame" x="0.0" y="30.5" width="275" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.25294005829999999" green="0.47561792180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="highlightedColor" red="0.25294005829999999" green="0.47561792180000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
@@ -74,7 +74,7 @@
                             <outlet property="delegate" destination="2He-Xf-xn9" id="e9a-Co-Dyk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="op7-Ed-ShO"/>
+                    <navigationItem key="navigationItem" title="AV Market" id="op7-Ed-ShO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iW-V0-AdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

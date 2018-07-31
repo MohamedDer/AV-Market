@@ -15,12 +15,11 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let df = DataFetcher()
-        df.fetchAds { ads in
+        let dataFetcher = DataFetcher()
+        dataFetcher.fetchAds { ads in
             self.adsArray = ads
             self.tableView.reloadData()
         }
-
     }
     
     
@@ -36,6 +35,7 @@ class ViewController: UITableViewController {
         } else {
             cell.priceLabel.text = "  -  "
         }
+        cell.selectionStyle = .none
         return cell
     }
 
