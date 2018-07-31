@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11E7DE460AFD145D2D9DB660 /* Pods_AV_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7654A7435E6155990F956464 /* Pods_AV_Market.framework */; };
 		29D495E12110A2370059F747 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D495E02110A2370059F747 /* AppDelegate.swift */; };
 		29D495E32110A2370059F747 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D495E22110A2370059F747 /* ViewController.swift */; };
 		29D495E62110A2370059F747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D495E42110A2370059F747 /* Main.storyboard */; };
 		29D495E82110A23F0059F747 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29D495E72110A23F0059F747 /* Assets.xcassets */; };
 		29D495EB2110A23F0059F747 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D495E92110A23F0059F747 /* LaunchScreen.storyboard */; };
+		29D495F32110A3B50059F747 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D495F22110A3B50059F747 /* DataFetcher.swift */; };
+		29D495F52110A3FB0059F747 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D495F42110A3FB0059F747 /* Ad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		29D495E72110A23F0059F747 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D495EA2110A23F0059F747 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29D495EC2110A23F0059F747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29D495F22110A3B50059F747 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		29D495F42110A3FB0059F747 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		4F864015536CAA806843F48B /* Pods-AV Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AV Market.release.xcconfig"; path = "Pods/Target Support Files/Pods-AV Market/Pods-AV Market.release.xcconfig"; sourceTree = "<group>"; };
+		7654A7435E6155990F956464 /* Pods_AV_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AV_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BD6589E632BB4A2761F41E /* Pods-AV Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AV Market.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AV Market/Pods-AV Market.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E7DE460AFD145D2D9DB660 /* Pods_AV_Market.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F59FE7E3E17776072E5CF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97BD6589E632BB4A2761F41E /* Pods-AV Market.debug.xcconfig */,
+				4F864015536CAA806843F48B /* Pods-AV Market.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		29D495D42110A2370059F747 = {
 			isa = PBXGroup;
 			children = (
 				29D495DF2110A2370059F747 /* AV Market */,
 				29D495DE2110A2370059F747 /* Products */,
+				22F59FE7E3E17776072E5CF5 /* Pods */,
+				35A93644DBF525B29956CDD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +80,18 @@
 				29D495E72110A23F0059F747 /* Assets.xcassets */,
 				29D495E92110A23F0059F747 /* LaunchScreen.storyboard */,
 				29D495EC2110A23F0059F747 /* Info.plist */,
+				29D495F22110A3B50059F747 /* DataFetcher.swift */,
+				29D495F42110A3FB0059F747 /* Ad.swift */,
 			);
 			path = "AV Market";
+			sourceTree = "<group>";
+		};
+		35A93644DBF525B29956CDD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7654A7435E6155990F956464 /* Pods_AV_Market.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29D495EF2110A23F0059F747 /* Build configuration list for PBXNativeTarget "AV Market" */;
 			buildPhases = (
+				6FF3BDAF9754CA164BB02358 /* [CP] Check Pods Manifest.lock */,
 				29D495D92110A2370059F747 /* Sources */,
 				29D495DA2110A2370059F747 /* Frameworks */,
 				29D495DB2110A2370059F747 /* Resources */,
+				0B7E1ABF24E826BD9E7CEF91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +162,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B7E1ABF24E826BD9E7CEF91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AV Market/Pods-AV Market-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AV Market/Pods-AV Market-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF3BDAF9754CA164BB02358 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AV Market-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29D495D92110A2370059F747 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D495F52110A3FB0059F747 /* Ad.swift in Sources */,
+				29D495F32110A3B50059F747 /* DataFetcher.swift in Sources */,
 				29D495E32110A2370059F747 /* ViewController.swift in Sources */,
 				29D495E12110A2370059F747 /* AppDelegate.swift in Sources */,
 			);
@@ -278,6 +357,7 @@
 		};
 		29D495F02110A23F0059F747 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BD6589E632BB4A2761F41E /* Pods-AV Market.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +375,7 @@
 		};
 		29D495F12110A23F0059F747 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F864015536CAA806843F48B /* Pods-AV Market.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
