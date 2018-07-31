@@ -18,6 +18,7 @@ class Ad: Mappable {
     var title: String?
     var price: Int?
     
+    // TO-DO :  retreive those too and make an appropriate view to show all the infos
     var ownerName: String?
     var ownerPhone: String?
     
@@ -32,7 +33,7 @@ class Ad: Mappable {
     }
     
     func mapping(map: Map) {
-        imageLink <- map["images"]["0"]["path"]
+//        imageLink <- map["images"]["0"]["path"]
         title <- map["subject"]
         price <- map["price"]
     }

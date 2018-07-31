@@ -15,6 +15,7 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorColor = UIColor.black
 
         let dataFetcher = DataFetcher()
         dataFetcher.fetchAds { ads in
@@ -39,7 +40,7 @@ class ViewController: UITableViewController {
         
         let url = URL(string: adsArray?[indexPath.row].imageLink ?? "https://i1.wp.com/smarktic.com/wp-content/uploads/2018/04/avito-logo.jpg?ssl=1")
         cell.adImage?.kf.setImage(with: url)
-        
+
         cell.selectionStyle = .none
         return cell
     }
