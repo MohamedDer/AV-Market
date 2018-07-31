@@ -32,8 +32,8 @@ class Ad: Mappable {
     }
     
     func mapping(map: Map) {
-        imageLink <- map["image"]
-        title <- map["title"]
+        imageLink <- map["images"]["0"]["path"]
+        title <- map["subject"]
         price <- map["price"]
     }
 }

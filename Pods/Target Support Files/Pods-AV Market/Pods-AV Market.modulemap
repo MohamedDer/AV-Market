@@ -1,0 +1,6 @@
+framework module Pods_AV_Market {
+  umbrella header "Pods-AV Market-umbrella.h"
+
+  export *
+  module * { export * }
+}
