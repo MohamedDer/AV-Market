@@ -21,7 +21,13 @@ class DataFetcher: NSObject {
             let jsonData = JSON(resData.result.value!)
             for i in 0...jsonData["ads"].count-1 {
                 let adJSON = jsonData["ads"][i]
-                ads.append(Ad(JSONString: adJSON.description)!)
+                let ad = Ad(JSONString: adJSON.description)!
+                // set the first image -if exists- as ad image
+                if let imageNode = adJSON["images"].first {
+                    let imagePath = imageNode.1["path"].description
+                    ad.imageLink = "https://www.avito.ma/images/\(imagePath)"
+                }
+                ads.append(ad)
             }
             completion(ads)
         }
