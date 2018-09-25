@@ -21,7 +21,7 @@ Libraries & Pods
 
 
 
-Developed by MohamedDer in 2 hours :bowtie:
+Developed -in 2 hours :bowtie:- by 
 ------
 Mohamed Derkaoui  -  medder12@gmail.com 
 
